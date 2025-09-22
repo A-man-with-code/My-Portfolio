@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/sam-logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#services">My Services</a></li>
+                    <li><a href="#portfolio">My Work</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Saurabh</span> </h1>
+                <p>Frontend <br>Web Developer</p>
+            </div>
+        </div>
+    </div>
+    <!-- ***********About **********-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user1.jpg" alt="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>"Hi, I’m Saurabh Dhurve, a passionate Frontend Web Developer.
+                        I love turning ideas into real websites that are not only functional but also visually
+                        appealing. My focus is on creating clean, responsive, and user-friendly designs that look great
+                        on any device. </p>
+                    <br>
+                    <p> When I’m not coding, I enjoy exploring new technologies and learning how design and development
+                        can come together to create unique digital experiences. My goal is to keep improving every day
+                        and build projects that solve real-world problems."
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><i class="fa-brands fa-html5"></i><span>HTML</span><br>For webpage layout</li>
+                            <li><i class="fa-brands fa-css fa-beat"></i><span>CSS</span><br> For designing the web pages
+                            </li>
+                            <li><i class="fa-brands fa-square-js"></i><span>JAVASCRIPT</span><br>For operate and animate
+                                the webpages</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><i class="fas fa-school"></i><span>SSC board education(2020-21) : passed with
+                                    92%</span><br>From B.R convent school,
+                                katol dist. Nagpur</li>
+                            <li> <i class="fas fa-book"></i><span>HSC board education(2022-23) : passed with
+                                    75%</span><br>From B.R Junior college,
+                                katol dist. Nagpur</li>
+                            <li> <i class="fas fa-user-graduate"></i><span>Bachelor of Engineering in Computer Science
+                                    and Engineering(2023-2027) :
+                                    Pursuing</span><br> Shri Sant Gajanan Maharaj College of Engineering, Shegoan
+                                dist.Buldhana</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certifications">
+                        <ul>
+                            <li><span>Certificate of Internship : Python course </span><br>By Skill Dzire Pvt.Ltd <br>
+                                <a href="images/Skill_Dzire Certificate.pdf" download class="btn btn2">See
+                                    Certificate</a>
+                            </li>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------Services-------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I create modern and user-friendly designs that blend creativity with simplicity. My goal is to
+                        design layouts that not only look visually appealing but also give visitors a smooth and
+                        engaging experience.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-globe"></i>
+                    <h2>Front end webpage</h2>
+                    <p>I build responsive, interactive, and clean webpages using HTML, CSS, and JavaScript. Every site I
+                        create is optimized for speed, mobile compatibility, and user experience, ensuring it works
+                        seamlessly on all devices.</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------My works------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/currency.png">
+                    <div class="layer">
+                        <h2>Currency Converter</h2>
+                        <p>A simple yet useful tool where users can instantly convert currencies with real-time exchange
+                            rates. This project helped me strengthen my JavaScript skills while focusing on user input
+                            validation and responsive UI design.</p>
+                        <a href="https://a-man-with-code.github.io/Currency-converter/currency.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/amazon.png">
+                    <div class="layer">
+                        <h2>Amazon clone webpage</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime eaque placeat eius enim.
+                            Laudantium maxime modi, quas doloremque cumque distinctio.</p>
+                        <a href="https://a-man-with-code.github.io/myamazon/index.html" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/zomato.png">
+                    <div class="layer">
+                        <h2>Zomato clone webpage</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime eaque placeat eius enim.
+                            Laudantium maxime modi, quas doloremque cumque distinctio.</p>
+                        <a href="https://a-man-with-code.github.io/Zomato-clone/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- -----------------------------contacts-------------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>saurabh@91619gamil.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>9767428769</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/hitman91619?igsh=MWplcTZ3emZ2ZXJ5eQ==" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="www.linkedin.com/in/saurabh-dhurve-92956128a" target="_blank"><i
+                                class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/user2.png" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            Copyright &copy; Saurabh | All rights are reserved.
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxLozY6IagtaEzizpgQvQIhIl6FYqLsazMqWOW2eVCzmQjhmmBbs5xgKgKg9sCej4lRDg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        constmsg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully";
+                    setTimeout(function () {
+                        msg.innerHTML = "";
+                    }, 5000);
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
